@@ -1,0 +1,27 @@
+import com.warrenstrange.googleauth.GoogleAuthenticator;
+
+public class GoogleAuthTest {
+
+    public static void main(String[] args) {
+        // Create an instance of GoogleAuthenticator
+        GoogleAuthenticator gAuth = new GoogleAuthenticator();
+
+        // Generate the OTP for the secret key
+        String secretKey = "JBSWY3DPEHPK3PXP";
+        int code = gAuth.getTotpPassword(secretKey);
+
+        // Print the OTP
+        System.out.println("The OTP is: " + code);
+    }
+}
+
+
+
+<dependency>
+    <groupId>com.warrenstrange</groupId>
+    <artifactId>googleauth</artifactId>
+    <version>1.5.0</version>
+</dependency>
+
+
+C:\Users\aliaa\OneDrive\Desktop\All about git
